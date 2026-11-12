@@ -9,7 +9,4 @@ git clone https://github.com/animegasan/luci-app-wolplus.git \
 
 git clone https://github.com/jerrykuku/luci-theme-argon.git \
     package/luci-theme-argon
-
-git clone https://github.com/muink/luci-app-netspeedtest.git \
-    package/luci-app-netspeedtest
 echo "=============================================="
