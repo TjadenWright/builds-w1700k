@@ -74,7 +74,7 @@ jobs:
           cp $bp/config.diff .config
           cat $bp/patches/*.patch 2>&- | patch -d . -p0 --forward ||:
           cp -r $bp/files/ . &>/dev/null ||:
-          bash $bp/custom.sh &>/dev/null ||:
+          bash $bp/custom.sh
           make defconfig; echo "CONFIG_VERSION_NUMBER=${{ matrix.target }}" >> .config
           umask 022
           grep -qF -- "--no-same-permissions -xf " include/download.mk || sed -i "s/-xf /--no-same-permissions -xf /" include/download.mk
